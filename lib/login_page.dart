@@ -125,6 +125,7 @@ class _LoginPageState extends State<LoginPage> {
                         );
                       },
                       child: const Text('Register now'))
+                  //This is text line for github
                 ],
               ),
            ],
