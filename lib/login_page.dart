@@ -20,7 +20,7 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               //Hello Again
               const Text(
-                'EduSoft',
+                'TMS',
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 36,
@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 50),
 
-              //Email textfield
+              //Email text field
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: Container(
@@ -121,7 +121,7 @@ class _LoginPageState extends State<LoginPage> {
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => SignUp())
+                            MaterialPageRoute(builder: (context) => const SignUp())
                         );
                       },
                       child: const Text('Register now'))
