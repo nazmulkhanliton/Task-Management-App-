@@ -1,3 +1,4 @@
+import 'package:first_project/post_task.dart';
 import 'package:flutter/material.dart';
 
 class PendingTaskPage extends StatefulWidget {
@@ -34,7 +35,22 @@ class _PendingTaskPage extends State<PendingTaskPage>{
             ),
           ),
         );
-      })
+      }),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const PostTaskPage())
+          );
+        },
+        backgroundColor: Colors.blue,
+        child: const Text(
+            '+',
+          style: TextStyle(
+            fontSize: 20,
+          ),
+        ),
+      ),
     );
   }
 }
