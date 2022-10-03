@@ -2,7 +2,7 @@ import 'package:first_project/signup_page.dart';
 import 'package:first_project/university_name_page.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget{
+class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -10,7 +10,7 @@ class LoginPage extends StatefulWidget{
 
 class _LoginPageState extends State<LoginPage> {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: SafeArea(
@@ -22,8 +22,8 @@ class _LoginPageState extends State<LoginPage> {
               const Text(
                 'TMS',
                 style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 36,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 36,
                 ),
               ),
               const SizedBox(height: 10),
@@ -93,14 +93,16 @@ class _LoginPageState extends State<LoginPage> {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(fixedSize: const Size(500, 55)),
-                    child: const Text('Sign In', style: TextStyle(fontSize: 24)),
+                    style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(500, 55)),
+                    child:
+                        const Text('Sign In', style: TextStyle(fontSize: 24)),
                     onPressed: () {
                       Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const UniversityName())
-                      );
-                      },
+                          MaterialPageRoute(
+                              builder: (context) => const UniversityName()));
+                    },
                   ),
                 ),
               ),
@@ -114,21 +116,22 @@ class _LoginPageState extends State<LoginPage> {
                     'Not a member?',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                  ),),
+                    ),
+                  ),
 
                   //
                   TextButton(
                       onPressed: () {
                         Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => const SignUp())
-                        );
+                            MaterialPageRoute(
+                                builder: (context) => const SignUp()));
                       },
                       child: const Text('Register now'))
                   //This is text line for github
                 ],
               ),
-           ],
+            ],
           ),
         ),
       ),
